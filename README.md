@@ -1,10 +1,14 @@
+<p align="center">
+  <img src="public/screenshots/github-banner.png" alt="OpsIntel Banner" />
+</p>
+
 # OpsIntel
 
 ## AI-Powered Executive Infrastructure Intelligence Platform
 
 OpsIntel is an enterprise-grade AI-powered infrastructure intelligence platform designed to transform operational infrastructure data into executive-level insights, strategic recommendations, readiness scoring, governance visibility, and commercialization intelligence.
 
-Unlike traditional monitoring dashboards that focus on metrics alone, OpsIntel helps technology leaders, cloud teams, consulting firms, MSPs, and enterprise organizations make informed operational and business decisions through AI-assisted intelligence.
+Unlike traditional monitoring dashboards that focus solely on metrics, OpsIntel helps technology leaders, cloud teams, consulting firms, managed service providers, and enterprise organizations make informed operational and business decisions through AI-assisted intelligence.
 
 ---
 
@@ -14,7 +18,7 @@ Modern organizations operate increasingly complex cloud and infrastructure envir
 
 OpsIntel consolidates operational visibility, governance intelligence, compliance readiness, commercialization planning, and executive decision support into a unified platform.
 
-The platform was intentionally designed with future SaaS commercialization and professional white-label licensing in mind.
+The platform was intentionally designed with future SaaS commercialization, enterprise deployment, and professional white-label licensing in mind.
 
 ---
 
@@ -22,55 +26,55 @@ The platform was intentionally designed with future SaaS commercialization and p
 
 ### Executive Intelligence
 
-* Infrastructure readiness scoring
-* Risk posture evaluation
-* Executive dashboards
-* Strategic recommendations
-* Operational intelligence
+- Infrastructure readiness scoring
+- Risk posture evaluation
+- Executive dashboards
+- Strategic recommendations
+- Operational intelligence
 
 ### Commercialization Intelligence
 
-* Launch readiness analysis
-* Pricing intelligence
-* Revenue opportunity assessment
-* Go-to-market planning
-* Product strategy support
+- Launch readiness analysis
+- Pricing intelligence
+- Revenue opportunity assessment
+- Go-to-market planning
+- Product strategy support
 
 ### Governance & Compliance
 
-* Compliance visibility
-* Policy assessment
-* Governance insights
-* Risk monitoring
+- Compliance visibility
+- Policy assessment
+- Governance insights
+- Risk monitoring
 
 ### AI Decision Support
 
-* Contextual recommendations
-* Executive advisory intelligence
-* Operational guidance
-* Strategic insight generation
+- Contextual recommendations
+- Executive advisory intelligence
+- Operational guidance
+- Strategic insight generation
 
 ### Multi-Tenant Readiness
 
-* Tenant-aware architecture
-* Organizational management
-* Role-based access foundations
-* White-label readiness
+- Tenant-aware architecture
+- Organizational management
+- Role-based access foundations
+- White-label readiness
 
 ---
 
 ## Core Workspaces
 
-* Executive Workspace
-* Commercialization Workspace
-* Governance Workspace
-* Compliance Workspace
-* AI Copilot Workspace
-* Customer Management Workspace
-* Multi-Tenant Workspace
-* Infrastructure Intelligence Workspace
+- Executive Workspace
+- Commercialization Workspace
+- Governance Workspace
+- Compliance Workspace
+- AI Copilot Workspace
+- Customer Management Workspace
+- Multi-Tenant Workspace
+- Infrastructure Intelligence Workspace
 
-20+ enterprise-focused workspaces designed to operate as a unified executive command center.
+**20+ enterprise-focused workspaces** designed to operate as a unified executive command center.
 
 ---
 
@@ -78,68 +82,84 @@ The platform was intentionally designed with future SaaS commercialization and p
 
 ### Frontend
 
-* Next.js
-* React
-* TypeScript
-* Tailwind CSS
+- Next.js
+- React
+- TypeScript
+- Tailwind CSS
 
 ### Platform Design
 
-* Modular Workspace Architecture
-* Enterprise Dashboard Framework
-* SaaS-Ready Foundations
-* White-Label Architecture Strategy
+- Modular Workspace Architecture
+- Enterprise Dashboard Framework
+- SaaS-Ready Foundations
+- White-Label Architecture Strategy
 
 ### Intelligence Layer
 
-* AI-Assisted Recommendations
-* Readiness Scoring
-* Operational Intelligence
-* Strategic Advisory Workflows
+- AI-Assisted Recommendations
+- Readiness Scoring
+- Operational Intelligence
+- Strategic Advisory Workflows
 
 ---
 
 ## Platform Architecture
 
-OpsIntel follows a modular architecture model:
+OpsIntel follows a modular enterprise architecture model:
 
-Executive Layer
+```text
+┌─────────────────────────────────────┐
+│ Executive Intelligence Layer        │
+└─────────────────┬───────────────────┘
+                  │
+┌─────────────────▼───────────────────┐
+│ AI Intelligence Engines             │
+└─────────────────┬───────────────────┘
+                  │
+┌─────────────────▼───────────────────┐
+│ Workspace Framework                 │
+└─────────────────┬───────────────────┘
+                  │
+┌─────────────────▼───────────────────┐
+│ Operational & Business Intelligence │
+└─────────────────┬───────────────────┘
+                  │
+┌─────────────────▼───────────────────┐
+│ Executive Recommendations           │
+└─────────────────────────────────────┘
+```
 
-↓
-
-Intelligence Engines
-
-↓
-
-Workspace Framework
-
-↓
-
-Operational Data & Insights
-
-↓
-
-Executive Recommendations
-
-This architecture enables future expansion into SaaS subscriptions, enterprise deployments, and professional white-label licensing.
+This architecture enables future expansion into SaaS subscriptions, enterprise deployments, consulting services, and professional white-label licensing.
 
 ---
 
 ## Screenshots
 
-Planned screenshots:
+### Dashboard Overview
 
-* Dashboard Overview
-* Executive Workspace
-* Commercialization Workspace
-* Workspace Launch Grid
-* Executive Intelligence Dashboard
+*Coming Soon*
+
+### Executive Workspace
+
+*Coming Soon*
+
+### Commercialization Workspace
+
+*Coming Soon*
+
+### Workspace Launch Grid
+
+*Coming Soon*
+
+### Executive Intelligence Dashboard
+
+*Coming Soon*
 
 ---
 
 ## Commercial Strategy
 
-OpsIntel supports multiple revenue channels:
+OpsIntel supports multiple revenue channels.
 
 ### SaaS Subscription
 
@@ -149,18 +169,18 @@ Recurring monthly platform access.
 
 Professional licensing for:
 
-* MSPs
-* DevOps Consulting Firms
-* Cloud Consulting Firms
-* Government Contractors
+- Managed Service Providers (MSPs)
+- DevOps Consulting Firms
+- Cloud Consulting Firms
+- Government Contractors
 
 ### Consulting Services
 
-Implementation, customization, and advisory engagements.
+Implementation, customization, and strategic advisory engagements.
 
 ### Enterprise Deployments
 
-Dedicated deployments for larger organizations.
+Dedicated deployments for larger organizations and enterprise customers.
 
 ---
 
@@ -168,14 +188,20 @@ Dedicated deployments for larger organizations.
 
 OpsIntel is being developed to support:
 
-* Custom branding
-* Theme customization
-* Tenant provisioning
-* Organizational management
-* Licensing controls
-* Enterprise deployment models
+- Custom branding
+- Theme customization
+- Tenant provisioning
+- Organizational management
+- Licensing controls
+- Enterprise deployment models
 
-Target customers include consulting firms, managed service providers, enterprise IT teams, and government contractors.
+Target customers include:
+
+- DevOps Consulting Firms
+- Cloud Consulting Firms
+- MSPs
+- Government Contractors
+- Enterprise IT Organizations
 
 ---
 
@@ -197,13 +223,14 @@ Subscription & Licensing
 
 Customer Success Workspace
 
-### Future
+### Future Initiatives
 
-* Predictive Intelligence
-* AI Forecasting
-* Marketplace Distribution
-* Enterprise Reporting
-* Workflow Automation
+- Predictive Intelligence
+- AI Forecasting
+- Marketplace Distribution
+- Enterprise Reporting
+- Workflow Automation
+- Advanced Executive Analytics
 
 ---
 
@@ -211,12 +238,12 @@ Customer Success Workspace
 
 OpsIntel demonstrates expertise across:
 
-* Cloud Architecture
-* DevOps Engineering
-* SaaS Product Design
-* Enterprise Platform Development
-* AI-Assisted Operations
-* Commercial Software Strategy
+- Cloud Architecture
+- DevOps Engineering
+- SaaS Product Design
+- Enterprise Platform Development
+- AI-Assisted Operations
+- Commercial Software Strategy
 
 The platform represents a modern approach to transforming operational infrastructure data into strategic business intelligence.
 
@@ -224,17 +251,19 @@ The platform represents a modern approach to transforming operational infrastruc
 
 ## Author
 
-Demarko Little
+**Demarko Little**
 
 Cloud Infrastructure & DevOps Engineer
 
-AWS Certified Solutions Architect – Associate
-AWS Certified Cloud Practitioner
-AWS Certified AI Practitioner
+AWS Certified Solutions Architect – Associate  
+AWS Certified Cloud Practitioner  
+AWS Certified AI Practitioner  
 Microsoft Azure Fundamentals
 
-Website:
+### Website
+
 https://www.demarkocloud.com
 
-LinkedIn:
+### LinkedIn
+
 https://linkedin.com/in/demarkol
