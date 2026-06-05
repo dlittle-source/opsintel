@@ -105,29 +105,11 @@ The platform was intentionally designed with future SaaS commercialization, ente
 
 ## Platform Architecture
 
-OpsIntel follows a modular enterprise architecture model:
+![OpsIntel Architecture](public/screenshots/opsintel-architecture-diagram.png)
 
-```text
-┌─────────────────────────────────────┐
-│ Executive Intelligence Layer        │
-└─────────────────┬───────────────────┘
-                  │
-┌─────────────────▼───────────────────┐
-│ AI Intelligence Engines             │
-└─────────────────┬───────────────────┘
-                  │
-┌─────────────────▼───────────────────┐
-│ Workspace Framework                 │
-└─────────────────┬───────────────────┘
-                  │
-┌─────────────────▼───────────────────┐
-│ Operational & Business Intelligence │
-└─────────────────┬───────────────────┘
-                  │
-┌─────────────────▼───────────────────┐
-│ Executive Recommendations           │
-└─────────────────────────────────────┘
-```
+OpsIntel follows a modular enterprise architecture model that transforms infrastructure telemetry, governance insights, compliance posture, and business intelligence into executive-level decision support. 
+
+The platform combines executive intelligence, AI-assisted recommendations, operational analytics, commercialization planning, and multi-workspace orchestration into a unified enterprise architecture.
 
 This architecture enables future expansion into SaaS subscriptions, enterprise deployments, consulting services, and professional white-label licensing.
 
@@ -137,23 +119,23 @@ This architecture enables future expansion into SaaS subscriptions, enterprise d
 
 ### Dashboard Overview
 
-*Coming Soon*
+![Dashboard Overview](public/screenshots/dashboard-overview.png)
 
 ### Executive Workspace
 
-*Coming Soon*
+![Executive Workspace](public/screenshots/executive-workspace.png)
 
 ### Commercialization Workspace
 
-*Coming Soon*
+![Commercialization Workspace](public/screenshots/commercialization-workspace.png)
 
 ### Workspace Launch Grid
 
-*Coming Soon*
+![Workspace Launch Grid](public/screenshots/workspace-launch-grid.png)
 
 ### Executive Intelligence Dashboard
 
-*Coming Soon*
+![Executive Intelligence](public/screenshots/executive-intelligence.png)
 
 ---
 
@@ -253,12 +235,18 @@ The platform represents a modern approach to transforming operational infrastruc
 
 **Demarko Little**
 
-Cloud Infrastructure & DevOps Engineer
+Cloud Infrastructure Engineer  
+DevOps Engineer  
+AI Platform Builder
 
-AWS Certified Solutions Architect – Associate  
-AWS Certified Cloud Practitioner  
-AWS Certified AI Practitioner  
-Microsoft Azure Fundamentals
+Focused on:
+
+- Executive Intelligence Platforms
+- Cloud Infrastructure
+- DevOps Automation
+- AI Systems
+- SaaS Commercialization
+
 
 ### Website
 
