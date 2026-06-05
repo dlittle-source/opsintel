@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="public/screenshots/github-banner.png" alt="OpsIntel Banner" />
+  <img src="public/screenshots/opsintel-banner.png" alt="OpsIntel Banner" />
 </p>
 
 # OpsIntel
