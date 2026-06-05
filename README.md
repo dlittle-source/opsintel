@@ -105,7 +105,7 @@ The platform was intentionally designed with future SaaS commercialization, ente
 
 ## Platform Architecture
 
-![OpsIntel Architecture](public/screenshots/opsintel-architecture-diagram.png)
+![OpsIntel Architecture](public/screenshots/opsintel-architecture.png)
 
 OpsIntel follows a modular enterprise architecture model that transforms infrastructure telemetry, governance insights, compliance posture, and business intelligence into executive-level decision support. 
 
