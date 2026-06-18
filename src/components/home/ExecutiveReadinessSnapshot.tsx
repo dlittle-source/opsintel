@@ -41,9 +41,9 @@ const readinessMetrics = [
     glow: "bg-amber-400/10",
   },
   {
-    label: "Deployment Readiness",
-    value: "Ready",
-    status: "Validated",
+    label: "Commercialization Readiness",
+    value: "Launch Ready",
+    status: "Commercialization Approved",
     icon: Rocket,
     accent: "text-sky-300",
     glow: "bg-sky-400/10",
@@ -70,13 +70,14 @@ export default function ExecutiveReadinessSnapshot() {
             Executive Readiness Snapshot
           </p>
           <h2 className="mt-2 text-2xl font-semibold tracking-tight text-white">
-            Enterprise operating posture at a glance.
+            Executive infrastructure intelligence at a glance.
           </h2>
         </div>
 
         <p className="max-w-xl text-sm leading-6 text-slate-400">
-          AI-generated executive indicators summarizing readiness, confidence,
-          risk, governance, deployment posture, and operational status.
+          AI-generated executive indicators summarizing readiness, governance,
+          commercialization potential, operational risk, decision confidence,
+          and enterprise platform health.
         </p>
       </div>
 

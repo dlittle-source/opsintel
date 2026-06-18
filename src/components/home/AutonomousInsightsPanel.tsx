@@ -1,29 +1,24 @@
-import {
-  BrainCircuit,
-  Cpu,
-  Eye,
-  Sparkles,
-} from "lucide-react";
+import { BrainCircuit, Cpu, Eye, Sparkles } from "lucide-react";
 
 const insights = [
   {
-    title: "Deployment Stability Trending Up",
+    title: "Operational Readiness Trending Up",
     detail:
-      "Recent deployment validation and rollback protections have improved operational resilience.",
+      "Readiness scoring, validation signals, and executive oversight indicators show stronger platform resilience.",
     icon: Cpu,
     accent: "text-cyan-300",
   },
   {
-    title: "Governance Risk Reduced",
+    title: "Governance Visibility Improved",
     detail:
-      "Architecture decisions remain aligned with governance and compliance objectives.",
+      "Policy posture, control alignment, and enterprise oversight signals remain within healthy operating thresholds.",
     icon: Eye,
     accent: "text-emerald-300",
   },
   {
-    title: "AI Confidence Elevated",
+    title: "AI Decision Confidence Elevated",
     detail:
-      "Executive intelligence models report high confidence in current recommendations.",
+      "OpsIntel intelligence models report high confidence across current executive recommendations and readiness signals.",
     icon: BrainCircuit,
     accent: "text-violet-300",
   },
@@ -37,16 +32,17 @@ export default function AutonomousInsightsPanel() {
       <div className="relative z-10">
         <div className="mb-3 inline-flex items-center gap-2 rounded-full border border-violet-400/20 bg-violet-400/10 px-3 py-1 text-xs font-medium text-violet-200">
           <Sparkles className="h-3.5 w-3.5" />
-          Autonomous Insights
+          Autonomous Executive Insights
         </div>
 
         <h2 className="text-xl font-semibold tracking-tight text-white">
-          AI-generated operational intelligence.
+          AI-generated executive intelligence.
         </h2>
 
         <p className="mt-2 text-sm leading-6 text-slate-400">
-          Autonomous analysis continuously evaluates deployment posture,
-          governance alignment, platform readiness, and infrastructure health.
+          Autonomous analysis continuously evaluates operational readiness,
+          governance visibility, enterprise platform health, commercialization
+          signals, and AI-powered decision support.
         </p>
 
         <div className="mt-6 space-y-4">

@@ -25,9 +25,9 @@ export type Tenant = {
 export const demoTenant: Tenant = {
   id: "tenant-demo",
 
-  name: "AI DevOps Architecture Generator",
+  name: "OpsIntel",
 
-  slug: "ai-devops",
+  slug: "opsintel",
 
   tier: "enterprise",
 

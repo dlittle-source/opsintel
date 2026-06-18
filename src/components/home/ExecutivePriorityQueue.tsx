@@ -8,26 +8,26 @@ import {
 
 const priorities = [
   {
-    title: "Validate production deployment path",
-    owner: "Deployment Workspace",
+    title: "Approve commercialization launch strategy",
+    owner: "Commercialization Workspace",
     priority: "High",
-    status: "Ready for review",
+    status: "Launch readiness validated",
     icon: Flag,
     accent: "text-cyan-300",
   },
   {
-    title: "Confirm governance posture",
+    title: "Review executive governance posture",
     owner: "Compliance Workspace",
     priority: "Medium",
-    status: "Controls aligned",
+    status: "Governance controls aligned",
     icon: ShieldCheck,
     accent: "text-emerald-300",
   },
   {
-    title: "Review optimization opportunities",
+    title: "Evaluate operational optimization signals",
     owner: "Optimization Workspace",
     priority: "Medium",
-    status: "Cost signals available",
+    status: "Efficiency opportunities identified",
     icon: Clock3,
     accent: "text-amber-300",
   },
@@ -45,12 +45,13 @@ export default function ExecutivePriorityQueue() {
         </div>
 
         <h2 className="text-xl font-semibold tracking-tight text-white">
-          Highest-value decisions requiring attention.
+          Highest-value executive decisions requiring attention.
         </h2>
 
         <p className="mt-2 text-sm leading-6 text-slate-400">
-          Prioritized executive actions based on operational readiness,
-          governance alignment, deployment confidence, and optimization impact.
+          Prioritized executive actions generated from governance intelligence,
+          commercialization readiness, operational maturity indicators, and
+          AI-assisted decision support.
         </p>
 
         <div className="mt-6 space-y-3">

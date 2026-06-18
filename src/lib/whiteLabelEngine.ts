@@ -25,12 +25,11 @@ export type WhiteLabelConfig = {
 export const defaultWhiteLabelConfig: WhiteLabelConfig = {
   enabled: false,
 
-  companyName: "AI DevOps Architecture Generator",
+  companyName: "OpsIntel",
 
-  applicationName:
-    "AI DevOps Architecture Generator",
+  applicationName: "OpsIntel",
 
-  logoText: "AI-DAG",
+  logoText: "OI",
 
   primaryColor: "#06B6D4",
 

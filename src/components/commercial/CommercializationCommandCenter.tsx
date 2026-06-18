@@ -6,7 +6,17 @@ import {
   ArrowRight,
 } from "lucide-react";
 
+import {
+  getBorderRadiusClass,
+  getButtonThemeClasses,
+  getExecutiveThemeClasses,
+} from "@/lib/themeConfigurationEngine";
+
 export default function CommercializationCommandCenter() {
+  const executiveThemeClasses = getExecutiveThemeClasses();
+  const buttonThemeClasses = getButtonThemeClasses();
+  const radiusClass = getBorderRadiusClass();
+
   const initiatives = [
     {
       title: "Product Positioning",
@@ -35,7 +45,9 @@ export default function CommercializationCommandCenter() {
   ];
 
   return (
-    <section className="rounded-3xl border border-cyan-500/20 bg-gradient-to-br from-slate-950 via-slate-900 to-black p-6">
+    <section
+      className={`border border-cyan-500/20 p-6 ${executiveThemeClasses} ${radiusClass}`}
+    >
       <div className="mb-6 flex items-start justify-between gap-4">
         <div>
           <p className="mb-2 text-xs font-semibold uppercase tracking-[0.25em] text-cyan-300">
@@ -52,14 +64,12 @@ export default function CommercializationCommandCenter() {
           </p>
         </div>
 
-        <div className="rounded-2xl border border-emerald-500/20 bg-emerald-500/10 px-5 py-4">
-          <div className="text-xs text-slate-400">
-            Launch Readiness
-          </div>
+        <div
+          className={`border border-emerald-500/20 bg-emerald-500/10 px-5 py-4 ${radiusClass}`}
+        >
+          <div className="text-xs text-slate-400">Launch Readiness</div>
 
-          <div className="text-2xl font-bold text-emerald-300">
-            88%
-          </div>
+          <div className="text-2xl font-bold text-emerald-300">88%</div>
         </div>
       </div>
 
@@ -70,13 +80,11 @@ export default function CommercializationCommandCenter() {
           return (
             <div
               key={initiative.title}
-              className="rounded-2xl border border-white/10 bg-slate-900/60 p-5"
+              className={`border border-white/10 bg-slate-900/60 p-5 ${radiusClass}`}
             >
               <Icon className="mb-4 h-5 w-5 text-cyan-300" />
 
-              <h3 className="font-semibold text-white">
-                {initiative.title}
-              </h3>
+              <h3 className="font-semibold text-white">{initiative.title}</h3>
 
               <p className="mt-2 text-sm leading-6 text-slate-400">
                 {initiative.description}
@@ -86,7 +94,9 @@ export default function CommercializationCommandCenter() {
         })}
       </div>
 
-      <div className="mt-6 rounded-2xl border border-emerald-500/20 bg-emerald-500/10 p-5">
+      <div
+        className={`mt-6 border border-emerald-500/20 bg-emerald-500/10 p-5 ${radiusClass}`}
+      >
         <div className="flex items-center justify-between gap-4">
           <div>
             <div className="text-sm font-medium text-emerald-300">
@@ -100,7 +110,11 @@ export default function CommercializationCommandCenter() {
             </div>
           </div>
 
-          <ArrowRight className="h-5 w-5 shrink-0 text-emerald-300" />
+          <div
+            className={`flex h-10 w-10 shrink-0 items-center justify-center border ${buttonThemeClasses} ${radiusClass}`}
+          >
+            <ArrowRight className="h-5 w-5" />
+          </div>
         </div>
       </div>
     </section>

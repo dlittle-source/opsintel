@@ -1,13 +1,23 @@
 import { Globe, ShieldCheck, FileText, LifeBuoy } from "lucide-react";
 
+import { getTenantBranding } from "@/lib/tenantBrandingEngine";
+
 export default function ExecutiveHomeFooter() {
+  const branding = getTenantBranding();
+
   return (
     <footer className="border-t border-white/10 py-6">
       <div className="flex flex-col gap-4 text-sm text-slate-500 md:flex-row md:items-center">
         <div className="flex flex-wrap items-center gap-4">
-          <span className="font-medium text-slate-400">
-            © 2026 AI DevOps Architecture Generator
-          </span>
+          <div className="flex flex-col">
+            <span className="font-medium text-slate-400">
+              © 2026 {branding.companyName}
+            </span>
+
+            <span className="text-xs text-slate-500">
+              AI-Powered Executive Infrastructure Intelligence Platform
+            </span>
+          </div>
 
           <div className="hidden h-4 w-px bg-white/10 md:block" />
 

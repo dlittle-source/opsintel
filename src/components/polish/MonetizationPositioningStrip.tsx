@@ -8,18 +8,19 @@ export default function MonetizationPositioningStrip() {
           </p>
 
           <h2 className="mt-2 text-xl font-bold text-white">
-            White-Label AI DevOps Platform Positioning
+            White-Label Executive Intelligence Platform
           </h2>
 
           <p className="mt-2 max-w-3xl text-sm leading-6 text-slate-400">
-            Frames the system as a premium AI DevOps architecture generator for
-            consultants, agencies, internal platform teams, and client-facing
-            infrastructure planning workflows.
+            Positions OpsIntel as a premium executive infrastructure
+            intelligence platform for consulting firms, managed service
+            providers, enterprise technology teams, and future white-label
+            licensing opportunities.
           </p>
         </div>
 
         <div className="grid grid-cols-2 gap-3 text-xs md:grid-cols-4">
-          {["SaaS", "White-Label", "Consulting", "Portfolio"].map((item) => (
+          {["SaaS", "White-Label", "Consulting", "Enterprise"].map((item) => (
             <div
               key={item}
               className="rounded-2xl border border-slate-800 bg-slate-950/75 px-4 py-3 text-center font-semibold text-slate-200"

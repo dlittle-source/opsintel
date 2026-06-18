@@ -16,7 +16,7 @@ const workspaces = [
   {
     title: "Executive",
     description:
-      "Strategic readiness, modernization intelligence, and executive platform oversight.",
+      "Executive readiness scoring, strategic intelligence, governance visibility, and platform oversight.",
     href: "/dashboard/executive",
     icon: Cpu,
     accent: "text-orange-300",
@@ -24,7 +24,7 @@ const workspaces = [
   {
     title: "Command Center",
     description:
-      "Autonomous operations, orchestration, and executive command workflows.",
+      "Autonomous operations, orchestration workflows, and executive command intelligence.",
     href: "/dashboard/command-center",
     icon: Layers3,
     accent: "text-cyan-300",
@@ -32,7 +32,7 @@ const workspaces = [
   {
     title: "AI Copilot",
     description:
-      "Infrastructure questions, executive guidance, and AI-powered advisory intelligence.",
+      "Executive guidance, infrastructure intelligence, and AI-powered decision support.",
     href: "/dashboard/copilot",
     icon: BrainCircuit,
     accent: "text-violet-300",
@@ -56,7 +56,7 @@ const workspaces = [
   {
     title: "Deployments",
     description:
-      "Release readiness, deployment forecasting, and delivery risk intelligence.",
+      "Release readiness, deployment intelligence, forecasting, and delivery risk visibility.",
     href: "/dashboard/deployments",
     icon: GitBranch,
     accent: "text-pink-300",
@@ -80,7 +80,7 @@ const workspaces = [
   {
     title: "Intelligence",
     description:
-      "AI insights, incident correlation, platform health, and operational awareness.",
+      "Operational intelligence, AI insights, incident correlation, and executive awareness.",
     href: "/dashboard/intelligence",
     icon: Activity,
     accent: "text-lime-300",
@@ -93,18 +93,18 @@ export default function ExecutiveWorkspaceLaunchGrid() {
       <div className="mb-5 flex flex-col justify-between gap-3 md:flex-row md:items-end">
         <div>
           <p className="text-xs font-semibold uppercase tracking-[0.22em] text-cyan-300">
-            Executive Workspaces
+            OpsIntel Platform Workspaces
           </p>
 
           <h2 className="mt-2 text-xl font-semibold text-white">
-            Launch operational workspaces
+            Executive Intelligence Command Center
           </h2>
 
           <p className="mt-2 max-w-2xl text-sm leading-6 text-slate-400">
-            Direct access to executive intelligence, command operations,
-            commercialization strategy, deployment governance, optimization,
-            compliance, multi-cloud management, and AI-powered operational
-            insights.
+            Direct access to executive intelligence, governance visibility,
+            commercialization strategy, operational readiness, deployment
+            governance, AI decision support, and enterprise infrastructure
+            intelligence.
           </p>
         </div>
       </div>

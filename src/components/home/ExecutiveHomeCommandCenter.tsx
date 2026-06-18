@@ -5,11 +5,15 @@ import {
   TrendingUp,
 } from "lucide-react";
 
+import { getTenantBranding } from "@/lib/tenantBrandingEngine";
+
 export default function ExecutiveHomeCommandCenter() {
+  const branding = getTenantBranding();
+
   return (
     <section className="grid gap-4 md:grid-cols-4">
       <MetricCard
-        title="Executive Score"
+        title="Executive Readiness"
         value="94%"
         icon={<TrendingUp className="h-5 w-5" />}
         accent="text-emerald-300"
@@ -30,7 +34,7 @@ export default function ExecutiveHomeCommandCenter() {
       />
 
       <MetricCard
-        title="Platform Health"
+        title={`${branding.companyName} Health`}
         value="Operational"
         icon={<Activity className="h-5 w-5" />}
         accent="text-amber-300"

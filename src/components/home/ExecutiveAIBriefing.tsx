@@ -6,13 +6,17 @@ import {
   Sparkles,
 } from "lucide-react";
 
-const briefingSignals = [
-  "All executive workspaces are online and routing correctly.",
-  "Architecture intelligence layer is ready for expansion.",
-  "Operational command center foundation is stable.",
-];
+import { getTenantBranding } from "@/lib/tenantBrandingEngine";
 
 export default function ExecutiveAIBriefing() {
+  const branding = getTenantBranding();
+
+  const briefingSignals = [
+    "Executive Intelligence Platform is operating normally.",
+    "Commercialization Intelligence workspace is active.",
+    "Governance and operational readiness systems are healthy.",
+  ];
+
   return (
     <section className="relative overflow-hidden rounded-3xl border border-white/10 bg-slate-950/80 p-6 shadow-[0_0_50px_rgba(15,23,42,0.6)]">
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(34,211,238,0.14),transparent_35%)]" />
@@ -22,17 +26,18 @@ export default function ExecutiveAIBriefing() {
         <div className="max-w-3xl">
           <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-cyan-400/20 bg-cyan-400/10 px-3 py-1 text-xs font-medium text-cyan-200">
             <BrainCircuit className="h-3.5 w-3.5" />
-            Executive AI Briefing
+            {branding.companyName} Executive Briefing
           </div>
 
           <h2 className="text-2xl font-semibold tracking-tight text-white md:text-3xl">
-            AI Operations Command Center is active.
+            {branding.companyName} Executive Intelligence Platform is operational.
           </h2>
 
           <p className="mt-3 max-w-2xl text-sm leading-6 text-slate-400">
-            The platform is now operating as an executive intelligence layer for
-            cloud architecture, governance, deployment strategy, optimization,
-            multicloud planning, and AI-assisted infrastructure decisions.
+            {branding.companyName} transforms operational infrastructure data into
+            executive intelligence, governance visibility, commercialization
+            readiness insights, and AI-powered decision support across the
+            enterprise.
           </p>
 
           <div className="mt-6 grid gap-3">
@@ -65,9 +70,9 @@ export default function ExecutiveAIBriefing() {
               <Activity className="h-4 w-4" />
               Workspaces
             </div>
-            <p className="mt-3 text-2xl font-semibold text-white">8 Online</p>
+            <p className="mt-3 text-2xl font-semibold text-white">9 Online</p>
             <p className="mt-1 text-xs text-cyan-100/70">
-              Executive routes are operational.
+              {branding.companyName} workspaces are operational.
             </p>
           </div>
 
@@ -76,9 +81,9 @@ export default function ExecutiveAIBriefing() {
               <Sparkles className="h-4 w-4" />
               Phase
             </div>
-            <p className="mt-3 text-2xl font-semibold text-white">9B</p>
+            <p className="mt-3 text-2xl font-semibold text-white">18B</p>
             <p className="mt-1 text-xs text-violet-100/70">
-              Executive Intelligence Layer in progress.
+              White-label foundation in progress.
             </p>
           </div>
         </div>

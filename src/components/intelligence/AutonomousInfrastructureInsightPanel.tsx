@@ -1,21 +1,21 @@
 const insights = [
   {
-    signal: "Workspace Density",
-    status: "Optimization Needed",
+    signal: "Workspace Architecture",
+    status: "Optimized",
     insight:
-      "The platform has strong enterprise capability, but route-based segmentation will improve clarity and reduce scroll fatigue.",
+      "Executive workspace segmentation improves clarity, scalability, and operational visibility across the platform.",
   },
   {
-    signal: "Launch Readiness",
+    signal: "Commercial Readiness",
     status: "Strong",
     insight:
-      "Visual polish, monetization framing, and executive hierarchy are now strong enough for portfolio walkthroughs.",
+      "Executive presentation quality, monetization positioning, and white-label readiness support commercial adoption.",
   },
   {
     signal: "Product Direction",
     status: "High Potential",
     insight:
-      "The system is positioned well for a white-label AI DevOps advisory platform after workspace routing is complete.",
+      "OpsIntel is positioned as a premium executive infrastructure intelligence platform suitable for SaaS, consulting, and white-label delivery models.",
   },
 ];
 
@@ -29,17 +29,18 @@ export default function AutonomousInfrastructureInsightPanel() {
           </p>
 
           <h2 className="mt-2 text-2xl font-bold tracking-tight text-white">
-            Infrastructure Intelligence Panel
+            Executive Infrastructure Intelligence
           </h2>
 
           <p className="mt-2 max-w-3xl text-sm leading-6 text-slate-400">
-            Simulated AI operational intelligence that analyzes platform
-            structure, launch readiness, and enterprise product direction.
+            Simulated AI intelligence continuously evaluates platform readiness,
+            operational posture, commercialization potential, and executive
+            decision support opportunities.
           </p>
         </div>
 
         <div className="rounded-2xl border border-emerald-400/20 bg-emerald-400/10 px-5 py-4 text-sm font-semibold text-emerald-200">
-          Autonomous Scan Complete
+          Autonomous Analysis Complete
         </div>
       </div>
 

@@ -16,12 +16,12 @@ import {
 } from "lucide-react";
 
 const platformHighlights = [
-  "Executive AI intelligence",
-  "Autonomous infrastructure advisory",
-  "Deployment risk forecasting",
+  "Executive infrastructure intelligence",
+  "AI-powered advisory insights",
+  "Operational readiness scoring",
   "Incident correlation intelligence",
   "Multi-cloud governance visibility",
-  "ROI and monetization readiness",
+  "SaaS and white-label readiness",
 ];
 
 const readinessMetrics = [
@@ -44,7 +44,7 @@ export default function FinalExecutivePresentationLayer() {
           <div>
             <div className="mb-2 inline-flex items-center gap-2 rounded-full border border-yellow-400/20 bg-yellow-400/10 px-3 py-1 text-xs font-medium uppercase tracking-[0.22em] text-yellow-200">
               <Sparkles className="h-3.5 w-3.5" />
-              Executive Launch Layer
+              OpsIntel Executive Launch Layer
             </div>
 
             <h2 className="text-3xl font-semibold tracking-tight text-white">
@@ -52,10 +52,10 @@ export default function FinalExecutivePresentationLayer() {
             </h2>
 
             <p className="mt-3 max-w-4xl text-sm leading-relaxed text-slate-400">
-              A premium executive showcase layer positioning the platform as an
-              enterprise AI DevOps operating system with autonomous intelligence,
-              operational governance, business value visibility, and
-              white-label SaaS readiness.
+              A premium executive showcase layer positioning OpsIntel as an
+              AI-powered executive infrastructure intelligence platform with
+              autonomous insights, governance visibility, business value
+              intelligence, and white-label SaaS readiness.
             </p>
           </div>
         </div>
@@ -69,7 +69,7 @@ export default function FinalExecutivePresentationLayer() {
             </div>
 
             <div className="text-sm font-medium text-emerald-100">
-              Executive presentation system ready
+              OpsIntel presentation system ready
             </div>
           </div>
         </div>
@@ -123,18 +123,18 @@ export default function FinalExecutivePresentationLayer() {
 
           <div className="mt-6 rounded-3xl border border-white/10 bg-slate-950/50 p-6">
             <p className="text-sm leading-relaxed text-slate-300">
-              This platform delivers an executive-grade AI DevOps architecture
-              intelligence system that helps teams evaluate infrastructure
-              posture, predict deployment risk, correlate incidents, optimize
-              cost, assess compliance, understand multi-cloud operations, and
-              trigger AI-guided command workflows from a single premium
-              operating environment.
+              OpsIntel delivers an executive-grade infrastructure intelligence
+              system that helps teams evaluate operational posture, predict
+              deployment risk, correlate incidents, optimize cost, assess
+              governance, understand multi-cloud operations, and trigger
+              AI-guided command workflows from a single premium operating
+              environment.
             </p>
 
             <p className="mt-4 text-sm leading-relaxed text-slate-300">
-              The system is positioned for portfolio differentiation,
-              enterprise demos, consulting conversations, monetization strategy,
-              and future white-label SaaS packaging.
+              The system is positioned for enterprise demos, consulting
+              conversations, SaaS monetization strategy, and future white-label
+              platform packaging.
             </p>
 
             <div className="mt-6 flex flex-wrap gap-3">
@@ -206,22 +206,21 @@ export default function FinalExecutivePresentationLayer() {
 
               <div>
                 <h3 className="text-lg font-semibold text-white">
-                  Phase 7 Completion Signal
+                  OpsIntel Completion Signal
                 </h3>
 
                 <p className="mt-1 text-sm text-slate-300">
-                  Ready for workspace architecture transition
+                  Ready for white-label foundation
                 </p>
               </div>
             </div>
 
             <div className="mt-6 rounded-2xl border border-white/10 bg-slate-950/40 p-5">
               <p className="text-sm leading-relaxed text-slate-300">
-                Core enterprise intelligence systems are now complete. The next
-                strategic move is to transition from a single vertical dashboard
-                into route-based executive workspaces that reduce scrolling,
-                improve performance, and create a true SaaS operating-system
-                experience.
+                Core executive intelligence systems are now complete. The next
+                strategic move is to introduce white-label foundations,
+                tenant-aware branding, organization profiles, and customer-ready
+                configuration layers.
               </p>
             </div>
           </div>

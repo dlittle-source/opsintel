@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 import { mockArchitecture } from "@/data/mockArchitecture";
 import { GeneratedArchitecture } from "@/types/architecture";
 import { supabase } from "@/lib/supabaseClient";
+import { getTenantBranding } from "@/lib/tenantBrandingEngine";
 import { analyzeInfrastructureCosts } from "@/lib/costIntelligenceEngine";
 import { analyzeDeploymentStrategy } from "@/lib/deploymentStrategyEngine";
 import { generateExecutiveOperationsIntelligence } from "@/lib/executiveOperationsEngine";
@@ -51,7 +52,6 @@ import ExecutiveAICopilotLayer from "@/components/copilot/ExecutiveAICopilotLaye
 import AutonomousWorkflowIntelligenceEngine from "@/components/workflows/AutonomousWorkflowIntelligenceEngine";
 import FinalExecutivePresentationLayer from "@/components/presentation/FinalExecutivePresentationLayer";
 
-
 import { analyzeMultiCloudArchitecture } from "@/lib/multiCloudIntelligence";
 import MultiCloudIntelligenceDashboard from "@/components/multicloud/MultiCloudIntelligenceDashboard";
 import AuthPanel from "@/components/auth/AuthPanel";
@@ -74,7 +74,6 @@ import DeploymentRunbookPanel from "@/components/architecture/DeploymentRunbookP
 import DeploymentFlowPanel from "@/components/architecture/DeploymentFlowPanel";
 import ArchitectureLegend from "@/components/architecture/ArchitectureLegend";
 import RecommendationsPanel from "@/components/architecture/RecommendationsPanel";
-
 
 import LiveTelemetryPanel from "@/components/LiveTelemetryPanel";
 import DeploymentActivityFeed from "@/components/DeploymentActivityFeed";
@@ -258,6 +257,8 @@ function getRestoreMessage(snapshot: ArchitectureSnapshot) {
 }
 
 export default function DashboardShell() {
+  const branding = getTenantBranding();
+
   const [architecture, setArchitecture] =
     useState<GeneratedArchitecture>(mockArchitecture);
 
@@ -374,7 +375,7 @@ export default function DashboardShell() {
       setWorkspaceMessage(`Active workspace loaded: ${project.name}`);
     } else {
       setWorkspaceMessage(
-        `Active workspace loaded: ${project.name}. This older saved project had missing architecture data, so the default architecture was restored safely.`
+        `Active workspace loaded: ${project.name}. This older saved workspace had missing architecture data, so the default ${branding.companyName} intelligence workspace was restored safely.`
       );
     }
   }
@@ -500,7 +501,7 @@ export default function DashboardShell() {
     setCanvasVersion((current) => current + 1);
     setWorkspaceMessage(getRestoreMessage(snapshot));
   }
-  
+
   const costAnalysis = analyzeInfrastructureCosts(architecture);
 
   const multiCloudAnalysis = analyzeMultiCloudArchitecture(architecture);
@@ -509,28 +510,28 @@ export default function DashboardShell() {
 
   const executiveOperations = generateExecutiveOperationsIntelligence();
 
-
   return (
     <main className="min-h-screen bg-slate-950 text-white">
       <div className="mx-auto max-w-7xl px-6 py-6">
         <header className="mb-6">
           <div className="mb-3 inline-flex rounded-full border border-cyan-400/30 bg-cyan-400/10 px-3 py-1 text-xs font-medium text-cyan-300">
-            AI Generation Engine Online
+            {branding.companyName} Intelligence Engine Online
           </div>
 
-          <p className="text-sm text-cyan-400">AI DevOps Platform</p>
+          <p className="text-sm text-cyan-400">
+            {branding.companyName} Platform
+          </p>
 
           <h1 className="text-3xl font-bold">
-            AI DevOps Architecture Generator
+            AI-Powered Executive Infrastructure Intelligence Platform
           </h1>
 
           <p className="mt-2 max-w-2xl text-slate-400">
-            Generate production-ready cloud architecture diagrams, deployment
-            flows, operational intelligence, infrastructure analytics, and
-            enterprise DevOps workspaces.
+            Transform operational infrastructure data into executive intelligence,
+            readiness scoring, governance visibility, commercialization insights,
+            architecture analysis, and AI-powered decision support.
           </p>
         </header>
-
 
         <section className="mb-6 rounded-2xl border border-slate-800 bg-slate-900/70 p-5 shadow-2xl">
           <div className="flex flex-col gap-4 lg:flex-row lg:items-center lg:justify-between">
@@ -618,21 +619,21 @@ export default function DashboardShell() {
             <FinalExecutivePresentationLayer />
 
             <ExecutiveCommandRibbon />
-            
+
             <EnterpriseOperationsConsole data={executiveOperations} />
-            
+
             <ExecutiveIntelligenceZones />
-            
+
             <ExecutiveSystemTabs />
 
             <ExecutiveLayoutRhythmSystem />
-            
+
             <OperationalCommandGrid />
 
             <ExecutiveDensityOptimizationSystem />
-            
+
             <ExecutiveAIActivityLayer />
-            
+
             <AdaptiveExecutiveWorkspace />
 
             <ContextualAIWorkspace />
@@ -650,42 +651,42 @@ export default function DashboardShell() {
             <EnterprisePremiumFinishLayer />
 
             <FinalExecutiveReadinessBanner />
-            
+
             <section className="mb-6 rounded-2xl border border-purple-500/20 bg-slate-900/70 p-5 shadow-2xl">
               <div className="mb-5 flex flex-col gap-3 lg:flex-row lg:items-center lg:justify-between">
                 <div>
                   <div className="mb-2 inline-flex rounded-full border border-purple-400/20 bg-purple-400/10 px-3 py-1 text-xs font-medium text-purple-300">
                     Workspace Version Intelligence
                   </div>
-            
+
                   <h2 className="text-lg font-semibold text-white">
                     Architecture Snapshot History
                   </h2>
-            
+
                   <p className="mt-1 text-sm text-slate-400">
                     Capture stable versions, restore previous infrastructure states,
                     track changes, and manage workspace evolution.
                   </p>
                 </div>
-            
+
                 <div className="text-sm text-slate-400">
                   {snapshots.length} saved version{snapshots.length === 1 ? "" : "s"}
                 </div>
               </div>
-            
+
               <div className="grid gap-4 lg:grid-cols-3">
                 <div className="rounded-xl border border-slate-800 bg-slate-950/70 p-4 lg:col-span-1">
                   <h3 className="text-sm font-semibold text-white">
                     Save New Snapshot
                   </h3>
-            
+
                   <input
                     value={snapshotLabel}
                     onChange={(event) => setSnapshotLabel(event.target.value)}
                     placeholder="Snapshot label"
                     className="mt-4 w-full rounded-xl border border-slate-800 bg-slate-950 px-4 py-3 text-sm text-white outline-none transition focus:border-purple-400"
                   />
-            
+
                   <select
                     value={snapshotStatus}
                     onChange={(event) =>
@@ -700,7 +701,7 @@ export default function DashboardShell() {
                     <option value="recovery">Recovery</option>
                     <option value="review">Client Review</option>
                   </select>
-            
+
                   <textarea
                     value={snapshotDescription}
                     onChange={(event) =>
@@ -710,7 +711,7 @@ export default function DashboardShell() {
                     rows={3}
                     className="mt-3 w-full rounded-xl border border-slate-800 bg-slate-950 px-4 py-3 text-sm text-white outline-none transition focus:border-purple-400"
                   />
-            
+
                   <button
                     onClick={handleSaveSnapshot}
                     disabled={!activeProjectId || isSavingSnapshot}
@@ -718,32 +719,32 @@ export default function DashboardShell() {
                   >
                     {isSavingSnapshot ? "Saving Snapshot..." : "Save Snapshot"}
                   </button>
-            
+
                   {!activeProjectId && (
                     <p className="mt-3 text-xs text-slate-500">
                       Load a saved workspace before creating version snapshots.
                     </p>
                   )}
                 </div>
-            
+
                 <div className="rounded-xl border border-slate-800 bg-slate-950/70 p-4 lg:col-span-2">
                   <h3 className="text-sm font-semibold text-white">
                     Version Timeline
                   </h3>
-            
+
                   {isLoadingSnapshots && (
                     <p className="mt-4 text-sm text-slate-400">
                       Loading workspace version history...
                     </p>
                   )}
-            
+
                   {!isLoadingSnapshots && snapshots.length === 0 && (
                     <div className="mt-4 rounded-xl border border-dashed border-slate-800 p-5 text-sm text-slate-400">
                       No snapshots saved yet. Create a snapshot to begin tracking
                       architecture version history.
                     </div>
                   )}
-            
+
                   <div className="mt-4 space-y-3">
                     {snapshots.map((snapshot) => (
                       <div
@@ -756,7 +757,7 @@ export default function DashboardShell() {
                               <h4 className="font-semibold text-white">
                                 {snapshot.label}
                               </h4>
-            
+
                               <span
                                 className={`rounded-full border px-2 py-1 text-[10px] font-semibold uppercase tracking-wide ${getSnapshotBadgeClass(
                                   snapshot.status
@@ -764,20 +765,20 @@ export default function DashboardShell() {
                               >
                                 {snapshot.status}
                               </span>
-            
+
                               <span className="rounded-full border border-cyan-400/20 bg-cyan-400/10 px-2 py-1 text-xs text-cyan-300">
                                 {snapshot.architecture.nodes.length} nodes
                               </span>
-            
+
                               <span className="rounded-full border border-emerald-400/20 bg-emerald-400/10 px-2 py-1 text-xs text-emerald-300">
                                 {snapshot.architecture.connections.length} links
                               </span>
                             </div>
-            
+
                             <p className="mt-1 text-xs text-slate-500">
                               {new Date(snapshot.created_at).toLocaleString()}
                             </p>
-            
+
                             {snapshot.change_summary.length > 0 && (
                               <div className="mt-3 flex flex-wrap gap-2">
                                 {snapshot.change_summary.map((change, index) => (
@@ -790,14 +791,14 @@ export default function DashboardShell() {
                                 ))}
                               </div>
                             )}
-            
+
                             {snapshot.description && (
                               <p className="mt-3 text-sm text-slate-400">
                                 {snapshot.description}
                               </p>
                             )}
                           </div>
-            
+
                           <div className="flex gap-2">
                             <button
                               onClick={() => handleRestoreSnapshot(snapshot)}
@@ -805,7 +806,7 @@ export default function DashboardShell() {
                             >
                               Restore Version
                             </button>
-            
+
                             <button
                               onClick={() => handleDeleteSnapshot(snapshot.id)}
                               className="rounded-xl border border-red-400/30 bg-red-500/10 px-4 py-2 text-sm font-semibold text-red-300 transition hover:bg-red-500/20"
@@ -820,87 +821,87 @@ export default function DashboardShell() {
                 </div>
               </div>
             </section>
-            
+
             <SnapshotComparePanel snapshots={snapshots} />
-            
+
             <PromptInputPanel
               onGenerate={handleGenerate}
               isGenerating={isGenerating}
             />
-            
+
             {error && (
               <div className="mt-4 rounded-xl border border-red-500/20 bg-red-500/10 p-4 text-sm text-red-300">
                 {error}
               </div>
             )}
-            
+
             <ArchitectureCanvas
               key={`${activeProjectId || "unsaved"}-${canvasVersion}`}
               architecture={architecture}
             />
-            
+
             <InfrastructureGovernancePanel architecture={architecture} />
-            
+
             <InfrastructureRecommendationsPanel architecture={architecture} />
-            
+
             <InfrastructureCostDashboard analysis={costAnalysis} />
-            
+
             <MultiCloudIntelligenceDashboard analysis={multiCloudAnalysis} />
-            
+
             <DeploymentStrategyDashboard analysis={deploymentAnalysis} />
-            
+
             <TelemetryIntelligenceDashboard architecture={architecture} />
-            
+
             <OperationsCommandCenter architecture={architecture} />
-            
+
             <InfrastructureHeatmap architecture={architecture} />
-            
+
             <ThreatIntelligenceDashboard architecture={architecture} />
-            
+
             <MetricsPanel architecture={architecture} />
-            
+
             <OperationalStatusPanel architecture={architecture} />
-            
+
             <InfrastructureInsightsPanel architecture={architecture} />
-            
+
             <InfrastructureStateSummary />
-            
+
             <AIDeploymentRiskScore />
-            
+
             <CloudProviderMetadataPanel />
-            
+
             <DeploymentAnalyticsPanel />
-            
+
             <DeploymentActivityFeed />
-            
+
             <LiveTelemetryPanel />
-            
+
             <InfrastructureAlertCenter />
-            
+
             <ProductionIncidentSimulator />
-            
+
             <AIOperationalInsights />
-            
+
             <StackOverviewPanel architecture={architecture} />
-            
+
             <NodeInventoryPanel architecture={architecture} />
-            
+
             <ConnectionMatrixPanel architecture={architecture} />
-            
+
             <DeploymentFlowPanel architecture={architecture} />
-            
+
             <DeploymentRunbookPanel architecture={architecture} />
-            
+
             <RecommendationsPanel architecture={architecture} />
-            
+
             <ArchitectureLegend />
-            
+
             <ArchitectureReportPanel architecture={architecture} />
-            
+
             <ExportActions architecture={architecture} />
-            
+
             <ArchitecturePDFExportPanel />
-            
+
             <SaaSCommercializationPanel />
           </div>
         </div>

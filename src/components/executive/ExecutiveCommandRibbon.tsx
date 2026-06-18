@@ -2,7 +2,7 @@
 
 const ribbonSignals = [
   {
-    label: "Enterprise Score",
+    label: "Executive Readiness",
     value: "88/100",
     status: "STABLE",
   },
@@ -12,17 +12,17 @@ const ribbonSignals = [
     status: "CONTROLLED",
   },
   {
-    label: "AI Systems",
+    label: "AI Intelligence",
     value: "ONLINE",
     status: "ACTIVE",
   },
   {
-    label: "Threat Level",
+    label: "Governance Status",
     value: "NORMAL",
     status: "SECURE",
   },
   {
-    label: "Deployment State",
+    label: "Commercial Readiness",
     value: "READY",
     status: "VALIDATED",
   },
@@ -38,7 +38,7 @@ export default function ExecutiveCommandRibbon() {
           </p>
 
           <h2 className="mt-2 text-xl font-black tracking-tight text-white">
-            Enterprise AI Operations Status
+            Executive Intelligence Status
           </h2>
         </div>
 

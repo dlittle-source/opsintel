@@ -1,24 +1,19 @@
-import {
-  Activity,
-  AlertCircle,
-  CheckCircle2,
-  Radar,
-} from "lucide-react";
+import { Activity, AlertCircle, CheckCircle2, Radar } from "lucide-react";
 
 const signals = [
   {
-    title: "Infrastructure Health",
+    title: "Platform Health",
     status: "Stable",
     description:
-      "Core platform services are operating within expected thresholds.",
+      "Core OpsIntel services are operating within expected enterprise readiness thresholds.",
     icon: CheckCircle2,
     accent: "text-emerald-300",
   },
   {
-    title: "Deployment Monitoring",
+    title: "Readiness Monitoring",
     status: "Active",
     description:
-      "Deployment telemetry and validation systems remain operational.",
+      "Executive readiness, governance, and operational intelligence signals remain under active observation.",
     icon: Activity,
     accent: "text-cyan-300",
   },
@@ -26,7 +21,7 @@ const signals = [
     title: "Executive Watchlist",
     status: "Observed",
     description:
-      "Optimization and governance recommendations are being monitored.",
+      "Commercialization, optimization, and governance recommendations are being monitored for executive review.",
     icon: Radar,
     accent: "text-violet-300",
   },
@@ -40,16 +35,17 @@ export default function OperationalAttentionCenter() {
       <div className="relative z-10">
         <div className="mb-3 inline-flex items-center gap-2 rounded-full border border-emerald-400/20 bg-emerald-400/10 px-3 py-1 text-xs font-medium text-emerald-200">
           <AlertCircle className="h-3.5 w-3.5" />
-          Operational Attention Center
+          Executive Attention Center
         </div>
 
         <h2 className="text-xl font-semibold tracking-tight text-white">
-          Active operational signals.
+          Active executive intelligence signals.
         </h2>
 
         <p className="mt-2 text-sm leading-6 text-slate-400">
-          Critical platform indicators requiring observation, validation,
-          or executive awareness.
+          Critical OpsIntel indicators requiring observation, validation, or
+          executive awareness across readiness, governance, commercialization,
+          and operational posture.
         </p>
 
         <div className="mt-6 space-y-4">

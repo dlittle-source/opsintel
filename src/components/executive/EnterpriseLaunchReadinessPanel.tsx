@@ -2,9 +2,9 @@
 
 const readinessSignals = [
   {
-    label: "Portfolio Readiness",
+    label: "Commercial Readiness",
     value: "96%",
-    status: "SHOWCASE READY",
+    status: "LAUNCH READY",
   },
   {
     label: "SaaS Positioning",
@@ -24,10 +24,10 @@ const readinessSignals = [
 ];
 
 const launchChecklist = [
-  "Executive operations console is visually positioned as the platform entry point.",
-  "AI intelligence systems are grouped into clear enterprise operational domains.",
-  "Command-center layout supports portfolio demos and monetization storytelling.",
-  "White-label value is visible through governance, monitoring, and advisory systems.",
+  "OpsIntel is visually positioned as the executive infrastructure intelligence entry point.",
+  "AI intelligence systems are grouped into clear executive operational domains.",
+  "Command-center layout supports SaaS demos, consulting conversations, and monetization storytelling.",
+  "White-label value is visible through governance, readiness, monitoring, and advisory systems.",
   "Platform experience now communicates enterprise readiness instead of basic dashboard behavior.",
 ];
 
@@ -36,17 +36,18 @@ export default function EnterpriseLaunchReadinessPanel() {
     <section className="space-y-6">
       <div className="rounded-3xl border border-cyan-500/20 bg-gradient-to-br from-slate-950 via-slate-900 to-cyan-950/30 p-8 shadow-2xl">
         <p className="text-xs uppercase tracking-[0.35em] text-cyan-300">
-          Enterprise Launch Readiness
+          OpsIntel Launch Readiness
         </p>
 
         <h2 className="mt-4 text-4xl font-black tracking-tight text-white">
-          Portfolio & Monetization Positioning
+          SaaS, Consulting & White-Label Positioning
         </h2>
 
         <p className="mt-5 max-w-4xl text-sm leading-7 text-slate-400">
-          This platform is being refined into a clean, premium, enterprise-ready
-          AI operations product suitable for portfolio presentation, client
-          conversations, SaaS positioning, and future white-label monetization.
+          OpsIntel is being refined into a clean, premium, enterprise-ready
+          executive infrastructure intelligence platform suitable for client
+          conversations, SaaS positioning, consulting delivery, and future
+          white-label monetization.
         </p>
 
         <div className="mt-8 grid gap-5 md:grid-cols-2 xl:grid-cols-4">
@@ -83,7 +84,7 @@ export default function EnterpriseLaunchReadinessPanel() {
           </p>
 
           <h3 className="mt-3 text-2xl font-bold text-white">
-            Friday Completion Focus
+            OpsIntel Rebrand Completion Focus
           </h3>
 
           <div className="mt-6 space-y-4">
@@ -111,10 +112,10 @@ export default function EnterpriseLaunchReadinessPanel() {
 
           <p className="mt-5 text-sm leading-7 text-slate-400">
             The product direction now supports a strong monetization story:
-            enterprise AI operations dashboards, cloud governance visibility,
-            AI advisory intelligence, operational monitoring, and executive
-            reporting can be packaged for white-label, consulting, or SaaS-style
-            positioning.
+            executive infrastructure intelligence, governance visibility,
+            commercialization readiness, AI advisory intelligence, operational
+            monitoring, and executive reporting can be packaged for
+            white-label, consulting, or SaaS-style positioning.
           </p>
 
           <div className="mt-6 rounded-2xl border border-slate-800 bg-black/25 p-5">
@@ -123,8 +124,9 @@ export default function EnterpriseLaunchReadinessPanel() {
             </p>
 
             <p className="mt-3 text-lg font-semibold text-white">
-              AI-powered infrastructure operations console for cloud teams,
-              DevOps leaders, and managed service providers.
+              AI-powered executive infrastructure intelligence platform for
+              cloud teams, DevOps leaders, consulting firms, and managed service
+              providers.
             </p>
           </div>
         </div>

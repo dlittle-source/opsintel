@@ -8,6 +8,12 @@ import {
   Sparkles,
 } from "lucide-react";
 
+import {
+  getBorderRadiusClass,
+  getButtonThemeClasses,
+  getExecutiveThemeClasses,
+} from "@/lib/themeConfigurationEngine";
+
 type Props = {
   title: string;
   description: string;
@@ -19,14 +25,22 @@ export default function ExecutiveWorkspaceHeader({
   description,
   badge = "Enterprise Workspace",
 }: Props) {
+  const executiveThemeClasses = getExecutiveThemeClasses();
+  const buttonThemeClasses = getButtonThemeClasses();
+  const radiusClass = getBorderRadiusClass();
+
   return (
-    <section className="relative overflow-hidden rounded-3xl border border-white/10 bg-gradient-to-br from-slate-950 via-slate-900 to-black p-6 shadow-[0_0_60px_rgba(0,0,0,0.35)]">
+    <section
+      className={`relative overflow-hidden border border-white/10 p-6 shadow-[0_0_60px_rgba(0,0,0,0.35)] ${executiveThemeClasses} ${radiusClass}`}
+    >
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(56,189,248,0.14),transparent_32%)]" />
       <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-cyan-300/40 to-transparent" />
 
       <div className="relative z-10 flex flex-col gap-6 xl:flex-row xl:items-start xl:justify-between">
         <div className="flex items-start gap-4">
-          <div className="rounded-3xl border border-cyan-400/20 bg-cyan-400/10 p-4 shadow-lg shadow-cyan-950/30">
+          <div
+            className={`border border-cyan-400/20 bg-cyan-400/10 p-4 shadow-lg shadow-cyan-950/30 ${radiusClass}`}
+          >
             <BrainCircuit className="h-7 w-7 text-cyan-300" />
           </div>
 
@@ -60,7 +74,9 @@ export default function ExecutiveWorkspaceHeader({
           </div>
         </div>
 
-        <div className="w-full rounded-2xl border border-emerald-500/20 bg-emerald-500/10 px-4 py-3 shadow-lg shadow-emerald-950/20 xl:w-auto">
+        <div
+          className={`w-full border border-emerald-500/20 bg-emerald-500/10 px-4 py-3 shadow-lg shadow-emerald-950/20 xl:w-auto ${radiusClass}`}
+        >
           <div className="flex items-center gap-2">
             <CheckCircle2 className="h-4 w-4 text-emerald-300" />
 
@@ -77,7 +93,9 @@ export default function ExecutiveWorkspaceHeader({
       </div>
 
       <div className="relative z-10 mt-6 flex flex-wrap gap-3">
-        <button className="inline-flex items-center gap-2 rounded-2xl border border-cyan-400/20 bg-cyan-400/10 px-4 py-2 text-sm font-medium text-cyan-300 transition-all duration-300 hover:-translate-y-0.5 hover:bg-cyan-400/20 hover:shadow-lg hover:shadow-cyan-950/30">
+        <button
+          className={`inline-flex items-center gap-2 border px-4 py-2 text-sm font-medium transition-all duration-300 hover:-translate-y-0.5 hover:shadow-lg hover:shadow-cyan-950/30 ${buttonThemeClasses} ${radiusClass}`}
+        >
           Open Executive Brief
           <ArrowRight className="h-4 w-4" />
         </button>

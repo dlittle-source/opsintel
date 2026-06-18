@@ -3,33 +3,33 @@ import {
   Gauge,
   GitBranch,
   ShieldCheck,
-  TrendingDown,
+  TrendingUp,
 } from "lucide-react";
 
 const recommendations = [
   {
-    title: "Modernize deployment strategy",
+    title: "Accelerate commercialization readiness",
     description:
-      "Standardize CI/CD validation, rollback checks, and health gates across production workloads.",
-    impact: "High Impact",
-    icon: GitBranch,
-    accent: "text-cyan-300",
-  },
-  {
-    title: "Reduce idle infrastructure spend",
-    description:
-      "Review underutilized environments and prioritize cost optimization across compute and networking layers.",
-    impact: "Cost Optimization",
-    icon: TrendingDown,
+      "Finalize pricing strategy, packaging intelligence, and go-to-market readiness initiatives to support platform monetization.",
+    impact: "Commercialization",
+    icon: TrendingUp,
     accent: "text-emerald-300",
   },
   {
-    title: "Strengthen governance controls",
+    title: "Enhance executive governance visibility",
     description:
-      "Improve policy alignment, access controls, and compliance visibility across cloud architecture decisions.",
+      "Expand policy intelligence, access governance, and operational oversight reporting across enterprise environments.",
     impact: "Governance",
     icon: ShieldCheck,
     accent: "text-amber-300",
+  },
+  {
+    title: "Advance operational intelligence maturity",
+    description:
+      "Standardize deployment controls, operational readiness scoring, and executive decision-support workflows.",
+    impact: "Executive Intelligence",
+    icon: GitBranch,
+    accent: "text-cyan-300",
   },
 ];
 
@@ -42,7 +42,7 @@ export default function StrategicRecommendationsFeed() {
         <div>
           <div className="mb-3 inline-flex items-center gap-2 rounded-full border border-cyan-400/20 bg-cyan-400/10 px-3 py-1 text-xs font-medium text-cyan-200">
             <Gauge className="h-3.5 w-3.5" />
-            Strategic Recommendations
+            Strategic Intelligence Recommendations
           </div>
 
           <h2 className="text-xl font-semibold tracking-tight text-white">
@@ -50,8 +50,9 @@ export default function StrategicRecommendationsFeed() {
           </h2>
 
           <p className="mt-2 text-sm leading-6 text-slate-400">
-            Recommended next moves based on readiness, governance, deployment,
-            optimization, and operational posture.
+            Executive recommendations generated from readiness scoring,
+            governance intelligence, commercialization insights, operational
+            maturity indicators, and AI-assisted decision support.
           </p>
         </div>
       </div>
