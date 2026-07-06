@@ -1,0 +1,12 @@
+import {
+  createWorkspaceGuardRuntimeProviderConsumerRuntimeCoordinatorServiceManagerRuntimeManagerResolver,
+} from "./workspaceGuardRuntimeProviderConsumerRuntimeCoordinatorServiceManagerRuntimeManagerResolver";
+
+import type {
+  WorkspaceGuardRuntimeProviderConsumerRuntimeCoordinatorServiceManagerRuntimeManager,
+} from "./workspaceGuardRuntimeProviderConsumerRuntimeCoordinatorServiceManagerRuntimeManagerTypes";
+
+export const createWorkspaceGuardRuntimeProviderConsumerRuntimeCoordinatorServiceManagerRuntimeManagerResolverFactory =
+  (): WorkspaceGuardRuntimeProviderConsumerRuntimeCoordinatorServiceManagerRuntimeManager => {
+    return createWorkspaceGuardRuntimeProviderConsumerRuntimeCoordinatorServiceManagerRuntimeManagerResolver();
+  };

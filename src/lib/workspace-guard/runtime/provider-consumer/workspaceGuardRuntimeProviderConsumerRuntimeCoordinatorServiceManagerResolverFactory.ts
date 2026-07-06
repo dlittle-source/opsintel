@@ -1,0 +1,16 @@
+import {
+  createWorkspaceGuardRuntimeProviderConsumerRuntimeCoordinatorServiceManagerResolver,
+} from "./workspaceGuardRuntimeProviderConsumerRuntimeCoordinatorServiceManagerResolver";
+
+import type {
+  WorkspaceGuardRuntimeProviderConsumerRuntimeCoordinatorServiceManagerResolver,
+  WorkspaceGuardRuntimeProviderConsumerRuntimeCoordinatorServiceManagerResolverDependencies,
+} from "./workspaceGuardRuntimeProviderConsumerRuntimeCoordinatorServiceManagerResolverTypes";
+
+export function createWorkspaceGuardRuntimeProviderConsumerRuntimeCoordinatorServiceManagerResolverFactory(
+  dependencies: WorkspaceGuardRuntimeProviderConsumerRuntimeCoordinatorServiceManagerResolverDependencies,
+): WorkspaceGuardRuntimeProviderConsumerRuntimeCoordinatorServiceManagerResolver {
+  return createWorkspaceGuardRuntimeProviderConsumerRuntimeCoordinatorServiceManagerResolver(
+    dependencies,
+  );
+}

@@ -1,0 +1,12 @@
+import type {
+  WorkspaceGuardRuntimeProviderConsumerRuntimeCoordinatorServiceManagerRegistry,
+  WorkspaceGuardRuntimeProviderConsumerRuntimeCoordinatorServiceManagerRegistryDependencies,
+} from "./workspaceGuardRuntimeProviderConsumerRuntimeCoordinatorServiceManagerRegistryTypes";
+
+export function createWorkspaceGuardRuntimeProviderConsumerRuntimeCoordinatorServiceManagerRegistry(
+  dependencies: WorkspaceGuardRuntimeProviderConsumerRuntimeCoordinatorServiceManagerRegistryDependencies,
+): WorkspaceGuardRuntimeProviderConsumerRuntimeCoordinatorServiceManagerRegistry {
+  return {
+    manager: dependencies.manager,
+  };
+}

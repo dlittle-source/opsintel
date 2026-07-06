@@ -1,0 +1,16 @@
+import {
+  createWorkspaceGuardRuntimeProviderConsumerRuntimeCoordinatorServiceManager,
+} from "./workspaceGuardRuntimeProviderConsumerRuntimeCoordinatorServiceManager";
+
+import type {
+  WorkspaceGuardRuntimeProviderConsumerRuntimeCoordinatorServiceManager,
+  WorkspaceGuardRuntimeProviderConsumerRuntimeCoordinatorServiceManagerDependencies,
+} from "./workspaceGuardRuntimeProviderConsumerRuntimeCoordinatorServiceManager";
+
+export function createWorkspaceGuardRuntimeProviderConsumerRuntimeCoordinatorServiceManagerFactory(
+  dependencies: WorkspaceGuardRuntimeProviderConsumerRuntimeCoordinatorServiceManagerDependencies,
+): WorkspaceGuardRuntimeProviderConsumerRuntimeCoordinatorServiceManager {
+  return createWorkspaceGuardRuntimeProviderConsumerRuntimeCoordinatorServiceManager(
+    dependencies,
+  );
+}

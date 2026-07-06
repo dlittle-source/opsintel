@@ -1,0 +1,7 @@
+import { WorkspaceGuardRuntimeProviderConsumerRuntimeWorkspaceCoordinatorRegistry } from "./workspaceGuardRuntimeProviderConsumerRuntimeWorkspaceCoordinatorRegistry";
+
+export class WorkspaceGuardRuntimeProviderConsumerRuntimeWorkspaceCoordinatorRegistryFactory {
+  static create(): WorkspaceGuardRuntimeProviderConsumerRuntimeWorkspaceCoordinatorRegistry {
+    return new WorkspaceGuardRuntimeProviderConsumerRuntimeWorkspaceCoordinatorRegistry();
+  }
+}
